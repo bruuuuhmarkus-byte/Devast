@@ -80937,7 +80937,7 @@ function AimbotMenuInit() {
     AimbotLoadConfig();
     const menu = new ո̅ߐ.dat.GUI();
     ո̅ߐ.AimbotMenu = menu;
-    const aimFolder = menu.addFolder("👑 Aim Bot 👑");
+    const aimFolder = menu.addFolder("Aim Bot");
     aimFolder.add(MOD, "AimBotEnabled").name("AimBotEnabled");
     aimFolder.add(MOD, "hideAimbotAngle").name("HideAimbotAngle");
     aimFolder.add(MOD, "ShowRealAngles", ["always", "withAim"]).name("ShowRealAngles");
@@ -80955,7 +80955,7 @@ function AimbotMenuInit() {
     const lineFolder = menu.addFolder("Aim Line");
     lineFolder.add(MOD, "visualizeResolving").name("ShowAimLine");
     lineFolder.addColor(MOD, "visualizeResolvingColor").name("AimLineColor");
-    const dynFolder = menu.addFolder("🧪 Dynamic Aim (Test)");
+    const dynFolder = menu.addFolder("Dynamic Aim");
     dynFolder.add(MOD, "dynamicAimEnabled").name("Enabled (OFF by default)");
     dynFolder.add(MOD, "closeRange", 50, 1000, 10).name("Close MaxDist");
     dynFolder.add(MOD, "closeDistCoeff", 10, 2000, 10).name("Close DistCoeff");
@@ -80970,11 +80970,11 @@ function AimbotMenuInit() {
     AimbotMenuSetupKey(keyFolder, "JitterKey", "JitterKey");
     AimbotMenuSetupKey(keyFolder, "HideAngleKey", "HideAngleKey");
     AimbotMenuSetupKey(keyFolder, "ModMenuKey", "ModMenuKey");
-    const visualFolder = menu.addFolder("👁 Visuals");
+    const visualFolder = menu.addFolder("Visuals");
     visualFolder.add(MOD, "ShowBuildingOwner").name("ShowBuildingOwner");
     visualFolder.addColor(MOD, "BuildingOwnerAllyColor").name("Owner Ally Color");
     visualFolder.addColor(MOD, "BuildingOwnerEnemyColor").name("Owner Enemy Color");
-    const tokenFolder = menu.addFolder("🔑 Token Changer");
+    const tokenFolder = menu.addFolder("Token Changer");
     tokenFolder.add({
         clickMe: function() {
             TokenChanger.copy();
